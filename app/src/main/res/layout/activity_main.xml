@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:background="@color/grey">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/topTextField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:hint="Красный Игрок"
+            android:textColorHint="#000000"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/topLeftImage"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/topRightImage"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/money" />
+
+        <ImageView
+            android:id="@+id/topLeftImage"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/user" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:text="16"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/topRightImage"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <GridLayout
+        android:id="@+id/topGrid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:columnCount="4"
+        android:rowCount="3"
+        android:background="@drawable/field"
+        app:layout_constraintBottom_toTopOf="@+id/middleTextField"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/clickableImage1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:srcCompat="@drawable/atom" />
+
+        <ImageView
+            android:id="@+id/clickableImage2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:srcCompat="@drawable/bakery" />
+
+        <ImageView
+            android:id="@+id/clickableImage3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:srcCompat="@drawable/mine" />
+
+        <ImageView
+            android:id="@+id/clickableImage4"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:srcCompat="@drawable/mine" />
+
+        <ImageView
+            android:id="@+id/clickableImage5"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:srcCompat="@drawable/atom" />
+
+        <ImageView
+            android:id="@+id/clickableImage6"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:srcCompat="@drawable/atom" />
+
+        <ImageView
+            android:id="@+id/clickableImage7"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:srcCompat="@drawable/atom" />
+
+        <ImageView
+            android:id="@+id/clickableImage8"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="8dp"
+            android:alpha="0"
+            android:clickable="true"
+            android:focusable="true"
+            app:srcCompat="@drawable/bakery" />
+
+        <ImageView
+            android:id="@+id/clickableImage9"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:srcCompat="@drawable/mine" />
+
+        <ImageView
+            android:id="@+id/clickableImage10"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:srcCompat="@drawable/atom" />
+
+        <ImageView
+            android:id="@+id/clickableImage11"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:srcCompat="@drawable/bakery" />
+
+        <ImageView
+            android:id="@+id/clickableImage12"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="8dp"
+            android:alpha="0"
+            android:clickable="true"
+            android:focusable="true"
+            app:srcCompat="@drawable/bakery" />
+
+
+    </GridLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/middleTextField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Красный Игрок ходит"
+        app:backgroundTint="@color/red"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <GridLayout
+        android:id="@+id/bottomGrid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/field"
+        android:columnCount="4"
+        android:rowCount="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/middleTextField">
+
+        <ImageView
+            android:id="@+id/clickable2Image1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:srcCompat="@drawable/bakery" />
+
+        <ImageView
+            android:id="@+id/clickable2Image2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:srcCompat="@drawable/bakery" />
+
+        <ImageView
+            android:id="@+id/clickable2Image3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:srcCompat="@drawable/bakery" />
+
+        <ImageView
+            android:id="@+id/clickable2Image4"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:srcCompat="@drawable/bakery" />
+
+        <ImageView
+            android:id="@+id/clickable2Image5"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:srcCompat="@drawable/bakery" />
+
+        <ImageView
+            android:id="@+id/clickable2Image6"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:srcCompat="@drawable/bakery" />
+
+        <ImageView
+            android:id="@+id/clickable2Image7"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:srcCompat="@drawable/bakery" />
+
+        <ImageView
+            android:id="@+id/clickable2Image8"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:srcCompat="@drawable/bakery" />
+
+        <ImageView
+            android:id="@+id/clickable2Image9"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:srcCompat="@drawable/atom" />
+
+        <ImageView
+            android:id="@+id/clickable2Image10"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:srcCompat="@drawable/atom" />
+
+        <ImageView
+            android:id="@+id/clickable2Image11"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:srcCompat="@drawable/atom" />
+
+        <ImageView
+            android:id="@+id/clickable2Image12"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="8dp"
+            android:alpha="0"
+            android:clickable="true"
+            android:focusable="true"
+            app:srcCompat="@drawable/atom" />
+
+    </GridLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/bottomLeftImage"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/user" />
+
+        <ImageView
+            android:id="@+id/bottomRightImage"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/money" />
+
+        <TextView
+            android:id="@+id/bottomTextField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:hint="Синий Игрок"
+            android:textColorHint="#000000"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/bottomLeftImage"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:text="4"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/bottomRightImage"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:alpha="0.25"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/hammer" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
